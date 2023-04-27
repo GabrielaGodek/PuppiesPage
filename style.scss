@@ -194,6 +194,7 @@ $main_color: #e996a6;
         justify-content: space-evenly;
         align-items: center;
         height: 100%;
+        overflow: hidden;
         .foto {
             max-width: vw(800, 640);
             width: 100%;
@@ -242,6 +243,7 @@ $main_color: #e996a6;
         background-color: $bg_color;
         width: 100%;
         position: relative;
+        overflow: hidden;
         .picture {
             .image {
                 @include imageCSS();
@@ -296,6 +298,7 @@ $main_color: #e996a6;
         justify-content: space-around;
         align-items: center;
         height: 100%;
+        overflow: hidden;
         .foto {
             max-width: vw(800, 640);
             width: 100%;
@@ -344,6 +347,7 @@ $main_color: #e996a6;
         background-color: $bg_color;
         width: 100%;
         position: relative;
+        overflow: hidden;
         .picture {
             .image {
                 @include imageCSS();
@@ -422,6 +426,7 @@ $main_color: #e996a6;
                     cursor: pointer;
                     opacity: 1;
                     transition: opacity .3s ease;
+
                     &:hover {
                         opacity: .5;
                     }
@@ -431,6 +436,11 @@ $main_color: #e996a6;
                     &.glide__arrow--right{
                         right: vw(800, -60);
                     }
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+
 
                     @media (min-width: 800px) {
                         width: vw(1920, 43);

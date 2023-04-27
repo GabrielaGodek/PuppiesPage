@@ -2,7 +2,7 @@ new Glide('.glide', {
     type: 'carousel',
 	perView: 2,
 	breakpoints: {
-		800: {
+		799: {
 			perView: 1
 		}
 	},
@@ -49,8 +49,10 @@ const elementsToObserve = [...slideOff, ...zoomIn]
 const observer = new IntersectionObserver(entries => {
     entries.forEach((entry) => {
         if (entry.isIntersecting && entry.target.classList.contains('animate-slide-off')) {
+            // window.innerWidth > 800 ? slideIn(entry.target) : ''
             slideIn(entry.target)
         } else if (entry.isIntersecting && entry.target.classList.contains('animate-zoom-in')){
+            // window.innerWidth > 800 ? zoom(entry.target) : ''
             zoom(entry.target)
         }
     })

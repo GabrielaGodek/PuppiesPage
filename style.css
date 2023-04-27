@@ -101,6 +101,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  overflow: hidden;
 }
 
 #puppies > section:nth-of-type(2) .wrapper .foto {
@@ -307,6 +308,7 @@
   background-color: #F8EFE9;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 #puppies > section:nth-of-type(3) .wrapper .picture .image {
@@ -450,6 +452,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+  overflow: hidden;
 }
 
 #puppies > section:nth-of-type(4) .wrapper .foto {
@@ -657,6 +660,7 @@
   background-color: #F8EFE9;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 #puppies > section:nth-of-type(5) .wrapper .picture .image {
@@ -905,6 +909,11 @@
 
 #puppies > section:nth-of-type(6) .wrapper .gg-slider .glide__arrows .glide__arrow.glide__arrow--right {
   right: -7.5vw;
+}
+
+#puppies > section:nth-of-type(6) .wrapper .gg-slider .glide__arrows .glide__arrow svg {
+  width: 20px;
+  height: 20px;
 }
 
 @media (min-width: 800px) {
