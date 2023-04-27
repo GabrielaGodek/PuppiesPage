@@ -109,6 +109,8 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #puppies > section:nth-of-type(2) .wrapper .foto img {
@@ -461,6 +463,8 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #puppies > section:nth-of-type(4) .wrapper .foto img {
@@ -663,6 +667,8 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #puppies > section:nth-of-type(5) .wrapper .picture .image {
@@ -1011,6 +1017,8 @@
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
     max-width: 42.70833vw;
+    -webkit-transform: scale(1);
+            transform: scale(1);
     overflow: hidden;
   }
   #puppies > section:nth-of-type(2) .wrapper .foto .dot {
@@ -1123,6 +1131,8 @@
     transition: transform .8, -webkit-transform .8;
     overflow: hidden;
     position: relative;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   #puppies > section:nth-of-type(3) .wrapper img {
     -webkit-transition: all 0.8s;
@@ -1249,12 +1259,16 @@
     margin: 0 auto;
     -webkit-transition: all .3 ease-in-out;
     transition: all .3 ease-in-out;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   #puppies > section:nth-of-type(4) .wrapper .foto {
     max-width: 42.70833vw;
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
     position: relative;
+    -webkit-transform: scale(1);
+            transform: scale(1);
     overflow: hidden;
   }
   #puppies > section:nth-of-type(4) .wrapper .foto img {
@@ -1369,6 +1383,8 @@
     transition: transform .8, -webkit-transform .8;
     overflow: hidden;
     position: relative;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   #puppies > section:nth-of-type(5) .wrapper img {
     -webkit-transition: all 0.8s;

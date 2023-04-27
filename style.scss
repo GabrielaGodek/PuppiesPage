@@ -201,6 +201,7 @@ $main_color: #e996a6;
             // height: 50%;
             position: relative;
             overflow: hidden;
+            transform: scale(1);
             img {
                 @include imageCSS();
             }
@@ -306,6 +307,7 @@ $main_color: #e996a6;
             // height: 50%;
             position: relative;
             overflow: hidden;
+            transform: scale(1);
             img {
                 @include imageCSS();
             }
@@ -350,6 +352,7 @@ $main_color: #e996a6;
         width: 100%;
         position: relative;
         overflow: hidden;
+        transform: scale(1);
         .picture {
             .image {
                 @include imageCSS();
@@ -483,6 +486,7 @@ $main_color: #e996a6;
             .foto {
                 transition: all 0.8s;
                 max-width: vw(1920, 820);
+                transform: scale(1);
                 overflow: hidden;
                 .dot {
                     left: vw(1920, 100);
@@ -520,6 +524,7 @@ $main_color: #e996a6;
             transition: transform .8;
             overflow: hidden;
             position: relative;
+            transform: scale(1);
             img {
                 transition: all 0.8s;
             }
@@ -571,10 +576,12 @@ $main_color: #e996a6;
             max-width: vw(1920, 1500);
             margin: 0 auto;
             transition: all .3 ease-in-out;
+            transform: scale(1);
             .foto {
                 max-width: vw(1920, 820);
                 transition: all 0.8s;
                 position: relative;
+                transform: scale(1);
                 overflow: hidden;
                 img {
                     @include imageCSS();
@@ -618,6 +625,7 @@ $main_color: #e996a6;
             transition: transform .8;
             overflow: hidden;
             position: relative;
+            transform: scale(1);
             img {
                 transition: all 0.8s;
             }
