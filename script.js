@@ -1,5 +1,3 @@
-
-
 new Glide('.glide', {
     type: 'carousel',
 	perView: 2,
@@ -17,14 +15,61 @@ new Glide('.glide', {
 
 
 const dots = document.querySelectorAll('.dot')
-dots.forEach(dot => {
-    dot.addEventListener('click', () => {
-        if(!dot.nextElementSibling.classList.contains('active')) {
+if(window.innerWidth < 800) {
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            if(!dot.nextElementSibling.classList.contains('active')) {
+                dot.nextElementSibling.classList.add('active')
+            } else {
+                dot.nextElementSibling.classList.remove('active')
+            }
+        })
+    })
+} else {
+    dots.forEach(dot => {
+        dot.addEventListener('mouseenter', () => {
             dot.nextElementSibling.classList.add('active')
-        } else {
+        })
+        dot.nextElementSibling.addEventListener('mouseover', () => {
+            dot.nextElementSibling.classList.add('active')
+        })
+        dot.nextElementSibling.addEventListener('mouseleave', () => {
             dot.nextElementSibling.classList.remove('active')
+        })
+        dot.addEventListener('mouseleave', () => {
+            dot.nextElementSibling.classList.remove('active')
+        })
+    })
+}
+
+const slideOff = document.querySelectorAll('#puppies .animate-slide-off')
+const zoomIn = document.querySelectorAll('#puppies .animate-zoom-in')
+
+const elementsToObserve = [...slideOff, ...zoomIn]
+const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.target.classList.contains('animate-slide-off')) {
+            slideIn(entry.target)
+        } else if (entry.isIntersecting && entry.target.classList.contains('animate-zoom-in')){
+            zoom(entry.target)
         }
     })
+},
+{ 
+    threshold: 0.5
 })
 
-
+const slideIn = (target) => {
+    target.querySelector('.foto').style.transform = 'translate(30px, 0)'
+    target.querySelector('.text_wrapper').style.transform = 'translate(-30px, 0)'
+}
+const slideOut = (target) => {
+    target.querySelector('.foto').style.transform = 'translate(-30px, 0)'
+    target.querySelector('.text_wrapper').style.transform = 'translate(30px, 0)'
+}
+const zoom = (target) => {
+    target.querySelector('img').style.transform = 'scale(1.1)'
+}
+elementsToObserve.forEach(element => {
+    observer.observe(element)
+})
