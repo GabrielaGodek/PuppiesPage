@@ -477,10 +477,11 @@ $main_color: #e996a6;
         padding-bottom: ratio(1920, 760);
         .wrapper {
             flex-direction: row;
-            transition: 0.8s;
+            transition: all 0.8s;
             .foto {
-                transition: 0.8s;
+                transition: all 0.8s;
                 max-width: vw(1920, 820);
+                overflow: hidden;
                 .dot {
                     left: vw(1920, 100);
                     bottom: vw(1920, 290);
@@ -496,7 +497,7 @@ $main_color: #e996a6;
                 }
             }
             .text_wrapper {
-                transition: 0.8s;
+                transition: all 0.8s;
                 max-width: vw(1920, 508);
                 p.text {
                     margin-bottom: vw(1920, 50);
@@ -518,7 +519,7 @@ $main_color: #e996a6;
             overflow: hidden;
             position: relative;
             img {
-                transition: 0.8s;
+                transition: all 0.8s;
             }
             .dot {
                 @include dotCSS();
@@ -570,8 +571,9 @@ $main_color: #e996a6;
             transition: all .3 ease-in-out;
             .foto {
                 max-width: vw(1920, 820);
-                transition: 0.8s;
+                transition: all 0.8s;
                 position: relative;
+                overflow: hidden;
                 img {
                     @include imageCSS();
                 }
@@ -594,7 +596,7 @@ $main_color: #e996a6;
             }
             .text_wrapper {
                 max-width: vw(1920, 508);
-                transition: 0.8s;
+                transition: all 0.8s;
                 p.text {
                     margin-bottom: vw(1920, 50);
                     margin-top: vw(1920, 50);
@@ -615,7 +617,7 @@ $main_color: #e996a6;
             overflow: hidden;
             position: relative;
             img {
-                transition: 0.8s;
+                transition: all 0.8s;
             }
             .dot {
                 @include dotCSS();

@@ -1002,13 +1002,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
   }
   #puppies > section:nth-of-type(2) .wrapper .foto {
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
     max-width: 42.70833vw;
+    overflow: hidden;
   }
   #puppies > section:nth-of-type(2) .wrapper .foto .dot {
     left: 5.20833vw;
@@ -1097,8 +1098,8 @@
     position: relative;
   }
   #puppies > section:nth-of-type(2) .wrapper .text_wrapper {
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
     max-width: 26.45833vw;
   }
   #puppies > section:nth-of-type(2) .wrapper .text_wrapper p.text {
@@ -1122,8 +1123,8 @@
     position: relative;
   }
   #puppies > section:nth-of-type(3) .wrapper img {
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
   }
   #puppies > section:nth-of-type(3) .wrapper .dot {
     position: absolute;
@@ -1249,9 +1250,10 @@
   }
   #puppies > section:nth-of-type(4) .wrapper .foto {
     max-width: 42.70833vw;
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
     position: relative;
+    overflow: hidden;
   }
   #puppies > section:nth-of-type(4) .wrapper .foto img {
     width: 100%;
@@ -1342,8 +1344,8 @@
 @media (min-width: 800px) {
   #puppies > section:nth-of-type(4) .wrapper .text_wrapper {
     max-width: 26.45833vw;
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
   }
   #puppies > section:nth-of-type(4) .wrapper .text_wrapper p.text {
     margin-bottom: 2.60417vw;
@@ -1367,8 +1369,8 @@
     position: relative;
   }
   #puppies > section:nth-of-type(5) .wrapper img {
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
   }
   #puppies > section:nth-of-type(5) .wrapper .dot {
     position: absolute;
