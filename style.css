@@ -108,6 +108,7 @@
   max-width: 80vw;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 #puppies > section:nth-of-type(2) .wrapper .foto img {
@@ -459,6 +460,7 @@
   max-width: 80vw;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 #puppies > section:nth-of-type(4) .wrapper .foto img {
